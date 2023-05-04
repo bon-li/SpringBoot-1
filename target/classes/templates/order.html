@@ -1,0 +1,65 @@
+<!-- 
+Name: Bonita Li
+Assignment: Assignment 1
+Date: May 24, 2022
+
+Description: Ordering form for cheese ordering application
+ -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Cheese Ordering Form</title>
+	<link href="../static/css/main.css" rel="stylesheet" type="text/css" media="all" th:href="@{css/main.css}">
+</head>
+<body>
+	<header>
+		<div class="heading">
+			<h1>Cheese Ordering</h1>
+		</div>
+	</header>
+	<hr>
+	<img src="../static/images/cheese.jpg" alt="blocks of cheese" th:src="@{images/cheese.jpg}" class="cheeseimg">
+	<form method="get" action="/submit">
+	<p> 
+		<label for="name">Cheese Name:
+			<input type="text" id="name" name="name" required> 
+		</label>
+		<br><br>
+		<label for="weight">Weight: 
+			<input type="number" id="weight" name="weight" value="10" max="99" required>
+		</label>
+		<label for="units">Units:
+			<select id="units" name="units" required>
+				<option value="WHEEL">lb. Wheel</option>
+				<option value="HALF_WHEEL">lb. Half Wheel</option>
+				<option value="QUARTER_WHEEL">lb. Quarter Wheel</option>
+				<option value="EIGHTH_WHEEL">lb. Eighth Wheel</option>
+				<option value="SQUARE">lb. Square</option>
+				<option value="TOMME">lb. Tomme</option>
+			</select>
+		</label>
+		<br><br>
+		<label for="price">Price:
+			<input type="number" id="price" name="price" step="0.01" value="0.00" placeholder="0.00" required>
+		</label>
+		<br><br>
+		<label for="specSheet">Spec Sheet URL:
+			<br>
+			<input type="text" id="specSheet" name="specSheet" class="specSheet">
+		</label>
+		<br><br>
+		<label for="unitNumber">Number of Units:
+			<input type="number" id="unitNumber" name="unitNumber" value="25" min="1" max="255" required>
+		</label>
+		<br><br>
+		</p>
+		<p>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+			<br>
+			<a href="/index.*">Back to Sydney's Cheesey Cheese</a>
+		</p>
+	</form>
+</body>
+</html>

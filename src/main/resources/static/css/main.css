@@ -1,0 +1,95 @@
+/*
+ Name: Bonita Li
+ Assignment: Assignment 1
+ Description: Used order.html and index.html for Cheese 
+ ordering application.
+*/
+@charset "UTF-8";
+
+ .cheeseheader {
+ 	width: 100%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+ 
+ .cheeseimg {
+ 	width: 42%;
+ 	margin-right: 5%;
+ 	float: right;
+ }
+ 
+ form {
+ 	width: 35%;
+ 	margin-left: 10%;
+ 	margin-right: 50%;
+ 	padding: 1%;
+ 	background-color: floralwhite;
+ 	border: 2px solid goldenrod;
+ }
+ 
+ footer {
+ 	padding-top: 30px;
+    text-align:center;
+    clear: both;
+ }
+
+ .heading {
+    margin: auto;
+    text-align:center;
+ }
+ 
+ hr {
+ 	width:95%;
+ 	height: 3px;
+ 	background-color:black;
+ 	margin-bottom: 30px;
+ }
+ 
+ .main {
+   width: 65%;
+   padding-left: 30px;
+   padding-right:10px;
+   margin-right: 5%;
+   float: right;
+   background-color: floralwhite;
+ }
+ 
+ nav {
+	width: 22%;
+	margin-right: 2%;
+	float: left;
+ }
+ 
+ nav a:link {
+ 	color: black;
+ }
+ 
+ nav a:hover {
+ 	color: red;
+ }
+ 
+ nav a:visited {
+ 	color: orange;
+ }
+ 
+ nav li{
+ 	border-left: 3px solid goldenrod;
+ 	background-color: lemonchiffon;
+ 	margin-left: 15%;
+ 	padding-top: 5%;
+ 	padding-bottom: 5%;
+ 	padding-left: 15%;
+ }
+ 
+ nav li:hover {
+ 	background:peachpuff;
+ }
+ 
+ nav ul {
+ 	list-style-type: none;
+ }
+ 
+ .specSheet {
+ 	width: 80%;
+ }
+ 

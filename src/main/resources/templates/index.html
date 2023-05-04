@@ -1,0 +1,66 @@
+<!-- 
+Name: Bonita Li
+Assignment: Assignment 1
+Date: May 24, 2022
+
+Description: Application allows users to order cheese. The application shows
+the name of the cheese, its weight, weight units, price of the cheese,
+spec sheet url, and number of units being purchased.
+Page: This is the main page for the cheese application
+Files: order.html - ordering form for cheese
+	   main.css - stylesheet used in application
+	   Cheese.java - Cheese object
+	   Units.java - Units enum
+	   MainController.java - controller for application   
+ -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Sydney's Cheesey Cheese</title>
+	<link href="../static/css/main.css" rel="stylesheet" type="text/css" media="all" th:href="@{css/main.css}">
+</head>
+<body>
+	<header>
+		<img src="../static/images/cheeseheader.jpg" alt="grated cheese header" th:src="@{images/cheeseheader.jpg}" class="cheeseheader">
+		<div class="heading">
+			<h1>Sydney's Cheesey Cheese</h1>
+			<h2>Welcome</h2>
+		</div>
+	</header>
+	<hr>
+	
+		<nav>
+			<ul>
+				<li><a href="/orderform">Order Cheese</a></li>
+				<li><a href="#">View Our Cheese</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+		</nav>
+
+	<div class="main">
+		<p>
+			Cheese cheese cheese is delicious I like cheese, all kinds of cheese. Stinky cheese, fruity cheese, hard cheese,
+			soft cheese, blue cheese, moldy cheese, holey cheese, cream cheese, white cheese, yellow cheese, orange cheese,
+			goat cheese, cow cheese, sheep cheese, sharp cheese, mild cheese, and all the cheeses. 
+		</p>
+		<p>
+			Cheese cheese cheese I want to eat more cheese. Eat all cheese in the world. Try out all the cheeses caciocavallo silano
+			bitto saint-andre ricotta salata ricotta di bufala vasterbotten y fenni faisselle cancoillotte bel paese ragusano
+			petit-suisse graviera naxou danablu graviera kritis kopanisti sulguni branza de burduf maasdam tete de moine queso zamorano
+			appenzeller cambozola torta del casar ubriaco saloio regional montasio caciotta paski sir manouri queijo serra da estrela 
+			kefalograviera pecorino toscano pecorino sardo tomme de savoie caprice des dieux dubliner provola saint-felicien port salut 
+			tomino cas gorgonzola dolce saint agur leerdammer mimolette jarlsberg chaumes oscypek bleu d'auvergne buche de chevre.
+		</p>
+		<p>
+			Kefalotyri havarti sirene coulommiers neufchatel fourme d'ambert cabrales urda beaufort vacherin brown cheese old amsterdam
+			caprino skyr fromage frais fromage blanc mozzarella di bufala campana myzithra taleggio stracchino di crescenza  bocconcini 
+			reblochon limburger mato cheshire pecorino romano queso manchego grana padano scamorza asiago fontina comte kasseri stilton 
+			burrata roquefort gruyere halloumi mascarpone emmentaler camembert de normandie gorgonzola brie de meaux gouda holland 
+			parmigiano reggiano ricotta feta cheddar mozzarella.
+		</p>
+	</div>
+	
+	<footer>&copy; Bonita Li</footer>
+</body>
+</html>
